@@ -27,6 +27,7 @@ RECEIVER_MAILID='mohamed.rafik@apmosys.com'
 log_file=/var/log/rear/$HOSTNAME.log
 
 find /var/tmp/rear* -type d -ctime +1 -exec rm -rf {} \;
+find /tmp/rear* -type d -ctime +1 -exec rm -rf {} \;
 echo "*********************************************************" > /tmp/output.txt
 echo "$HOSTNAME Rear Backup successfully done"  >> /tmp/output.txt
 echo "*********************************************************" >> /tmp/output.txt
